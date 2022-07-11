@@ -1,0 +1,16 @@
+类型定义和类型别名
+type definition
+type alias
+
+类型定义: type MyInt int
+类型别名: type MyInt = int
+
+区别：
+类型定义是一个全新的类型，与原类型是不同的类型，不能直接使用原类型的方法
+类型别名只是在编译前存在，在编译之后类型的别名还是原类型
+
+最典型的就是使用类型定义来定义结构体
+type Student struct{
+    name type
+    ...
+}
